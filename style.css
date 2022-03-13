@@ -169,3 +169,25 @@ select {
   transform: rotateX(180deg);
   height: 80%;
 }
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+footer a {
+  text-decoration: none;
+  text-align: center;
+}
+
+footer a p{
+  transition: all 1s ease;
+  text-align: center;
+  color: white;
+}
+
+footer a p:hover{
+  color: rgb(0, 255, 0);
+
+}
