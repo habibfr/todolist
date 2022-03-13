@@ -12,7 +12,7 @@ body {
 
 .container {
   width: 40rem;
-  max-width: 80%;
+  max-width: 90%;
   margin: 2rem auto 1rem;
   justify-content: center;
 }
@@ -31,10 +31,11 @@ form {
 
 form input,
 form button {
-  max-width: 70%;
+  max-width: 60%;
   padding: 0.3rem 0.5rem;
   font-size: 2rem;
   border: none;
+  outline: none;
   background: #fff;
 }
 
@@ -46,15 +47,15 @@ form button {
 }
 
 form button:hover {
-  background: #0ead0e;
-  color: #fff;
+  background: #fff;
+  color: #e9572f;
 }
 
 .todo-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 2rem auto;
+  margin: auto;
 }
 
 .todo-list {
@@ -116,4 +117,54 @@ form button:hover {
 .fall {
   transform: translateY(8rem) rotateZ(20deg);
   opacity: 0;
+}
+
+.container-input {
+  max-width: 20%;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none;
+}
+
+.select {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+select {
+  color: #ee937a;
+  width: 10rem;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.select::after {
+  width: 10%;
+  height: 100%;
+  content: "\25BC";
+  position: absolute;
+  background: #d85835;
+  top: 0;
+  right: 0;
+  padding: 0.2rem;
+  pointer-events: none;
+  transition: all 1s ease;
+}
+
+.select:hover::after {
+  background: #fff;
+  color: #cc431e;
+  transform: rotateX(180deg);
+  height: 80%;
 }
