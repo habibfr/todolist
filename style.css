@@ -6,9 +6,11 @@
 
 body {
   /* background-image: linear-gradient(120deg, #e0c25f, #ee937a); */
+  background-color: #945858;
+  background-repeat: no-repeat;
   color: #fff;
   font-family: "Poppins", sans-serif;
-  background-image: url("https://source.unsplash.com/1600x900/?technology");
+  /* background-image: url("https://source.unsplash.com/1600x900/?technology"); */
 }
 
 .container {
@@ -170,11 +172,6 @@ select {
   height: 80%;
 }
 
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
 
 footer a {
   text-decoration: none;
@@ -184,7 +181,8 @@ footer a {
 footer a p{
   transition: all 1s ease;
   text-align: center;
-  color: white;
+  color: rgb(214, 132, 132);
+  margin-top: 5rem;
 }
 
 footer a p:hover{
